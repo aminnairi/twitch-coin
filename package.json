@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "build": "rollup --config rollup.config.js",
-        "lint": "eslint . --ext .ts"
+        "lint": "eslint . --ext .ts,.js"
     },
     "devDependencies": {
         "@babel/core": "^7.10.5",
