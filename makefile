@@ -1,8 +1,8 @@
 .PHONY: start stop restart build clean mrproper install lint audit
 
-ifneq (${CI},)
-	EXEC_OPTIONS=-T --user root
-else
+EXEC_OPTIONS=
+
+ifeq (${CI},true)
 	EXEC_OPTIONS=-T --user root
 endif
 
