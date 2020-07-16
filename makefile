@@ -1,4 +1,4 @@
-.PHONY: start stop restart build clean mrproper install lint audit
+.PHONY: start stop restart build clean mrproper install lint audit test
 
 EXEC_OPTIONS=
 
@@ -34,3 +34,6 @@ lint:
 
 audit:
 	docker-compose exec $(EXEC_OPTIONS) node yarn audit --groups devDependencies
+
+test:
+	docker-compose exec $(EXEC_OPTIONS) node yarn test
