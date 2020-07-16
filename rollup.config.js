@@ -35,4 +35,4 @@ export default {
         file: resolve("build/scripts/twitch-coin.js"),
         format: "iife"
     }
-}
+};
