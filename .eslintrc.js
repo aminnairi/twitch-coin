@@ -2,12 +2,14 @@ module.exports = {
     "env": {
         "browser": true,
         "es2020": true,
-        "node": true
+        "node": true,
+        "jest/globals": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:json/recommended"
+        "plugin:json/recommended",
+        "plugin:jest/all"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -15,7 +17,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "jest"
     ],
     "rules": {
         "indent": [
