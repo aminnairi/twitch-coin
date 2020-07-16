@@ -1,6 +1,6 @@
 "use strict";
 
-(function twitchChannelPoints(): void {
+(function twitchCoin(): void {
     const AFTER_FIVE_SECOND: number = 5000;
     const BUTTON_CLASS: string = ".tw-button.tw-button--success.tw-interactive";
 
@@ -17,5 +17,5 @@
 
     console.log("[TwitchCoin] I'm going to wait for five seconds before searching for another button to gather Twitch Coin.");
 
-    window.setTimeout(twitchChannelPoints, AFTER_FIVE_SECOND);
+    window.setTimeout(twitchCoin, AFTER_FIVE_SECOND);
 })();
