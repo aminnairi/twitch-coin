@@ -1,0 +1,27 @@
+name: Code Style CI
+
+on:
+    push:
+        branches:
+            - latest
+
+    pull_request:
+        branches:
+            - latest
+
+jobs:
+    codestyle:
+        name: Code Style CI
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone the repository
+              uses: actions/checkout@v2
+
+            - name: Start the Docker Compose services
+              run: make start
+
+            - name: Install the project's development dependencies
+              run: sudo make install
+
+            - name: Check for code-style errors of the source-code
+              run: make lint
