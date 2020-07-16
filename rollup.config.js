@@ -6,7 +6,7 @@ import {terser} from "rollup-plugin-terser";
 import {resolve} from "path";
 
 export default {
-    input: resolve("src", "twitch-coin.ts"),
+    input: resolve("src", "main.ts"),
 
     plugins: [
         remove({
