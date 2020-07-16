@@ -2,6 +2,8 @@
 
 Automatically gather your Twitch Coin while watching your favorite streamer.
 
+![Code Style CI](https://github.com/aminnairi/twitch-coin/workflows/Code%20Style%20CI/badge.svg?branch=latest)
+
 ## Development
 
 ### Requirements
