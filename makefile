@@ -1,4 +1,4 @@
-.PHONY: start stop restart build clean mrproper install
+.PHONY: start stop restart build clean mrproper install lint audit
 
 start:
 	docker-compose pull
@@ -22,3 +22,9 @@ mrproper:
 
 install:
 	docker-compose exec node yarn install
+
+lint:
+	docker-compose exec node yarn lint
+
+audit:
+	docker-compose exec node yarn audit --groups devDependencies
