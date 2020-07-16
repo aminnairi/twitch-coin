@@ -21,7 +21,7 @@ jobs:
               run: make start
 
             - name: Install the project's development dependencies
-              run: sudo make install
+              run: make install
 
             - name: Check for code-style errors of the source-code
               run: make lint
