@@ -6,3 +6,6 @@
 /.yarnrc
 /yarn-error.log
 /twitch-coin.zip
+/package-lock.json
+/.npm
+/.config
