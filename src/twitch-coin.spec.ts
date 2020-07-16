@@ -18,11 +18,11 @@ describe("twitch-coin", (): void => {
 
         const callback: () => void = jest.fn();
 
-        button.addEventListener("click", callback);
+        button.addEventListener("click", () => callback(), false);
 
         twitchCoin();
 
-        expect(callback).toBeCalled();
+        expect(callback).toHaveBeenCalledWith();
 
         button.removeEventListener("click", callback);
     });
@@ -39,8 +39,8 @@ describe("twitch-coin", (): void => {
 
         twitchCoin();
 
-        expect(callback).not.toBeCalled();
+        expect(callback).not.toHaveBeenCalled();
 
-        document.body.removeEventListener("click", callback);
+        document.body.removeEventListener("click", () => callback(), false);
     });
 });
