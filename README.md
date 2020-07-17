@@ -8,8 +8,8 @@ Automatically gather your Twitch Coin while watching your favorite streamer.
 
 ### Firefox Addon
 
-[Install](https://addons.mozilla.org/en-US/firefox/addon/twitch-coin/).
+[Install](https://addons.mozilla.org/en-US/firefox/addon/twitch-coin/)
 
 ### Chrome Web Store
 
-Chrome extension is currently in validation stage.
+[Install](https://chrome.google.com/webstore/detail/twitch-coin/jhoffdoklpjnpdjcgegphcicolpipocf?hl=fr)
