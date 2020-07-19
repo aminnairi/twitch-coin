@@ -13,3 +13,15 @@ Automatically gather your Twitch Coin while watching your favorite streamer.
 ### Chrome Web Store
 
 [Install](https://chrome.google.com/webstore/detail/twitch-coin/jhoffdoklpjnpdjcgegphcicolpipocf?hl=fr)
+
+## Contributing
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
+## Changelog
+
+See [`CHANGELOG.md`](./CHANGELOG.md).
+
+## LICENSE
+
+See [`LICENSE`](./LICENSE).
