@@ -1,6 +1,6 @@
 export function twitchCoin(): void {
     const AFTER_FIVE_SECOND: number = 5000;
-    const BUTTON_CLASS: string = ".tw-button.tw-button--success.tw-interactive";
+    const BUTTON_CLASS: string = ".tw-button.tw-button--success";
 
     console.log("[TwitchCoin] I'm searching for a Twitch Coin button to gather Twitch Coin.");
 
