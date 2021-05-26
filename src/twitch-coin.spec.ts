@@ -17,6 +17,7 @@ describe("twitch-coin", (): void => {
         const callback: () => void = jest.fn();
         const listener: () => void = () => callback();
 
+        button.classList.add("ScCoreButton-sc-1qn4ixc-0", "ScCoreButtonSuccess-sc-1qn4ixc-5", "VGQNd");
         button.addEventListener("click", listener, false);
 
         twitchCoin();
@@ -33,6 +34,7 @@ describe("twitch-coin", (): void => {
         const listener: () => void = () => callback();
 
         button.removeAttribute("aria-label");
+        button.classList.remove("ScCoreButton-sc-1qn4ixc-0", "ScCoreButtonSuccess-sc-1qn4ixc-5", "VGQNd");
         button.addEventListener("click", listener, false);
 
         twitchCoin();
