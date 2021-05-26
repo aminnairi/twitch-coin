@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Twitch Coin",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Automatically gather your Twitch Coin while watching your favorite streamer.",
     "homepage_url": "https://github.com/aminnairi/twitch-coin#readme",
     "icons": {
