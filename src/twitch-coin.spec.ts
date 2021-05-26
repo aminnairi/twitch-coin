@@ -3,9 +3,7 @@ import {twitchCoin} from "./twitch-coin";
 describe("twitch-coin", (): void => {
     const button: HTMLButtonElement = document.createElement("button");
 
-    button.classList.add("tw-button");
-    button.classList.add("tw-button--success");
-    button.classList.add("tw-interactive");
+    button.setAttribute("aria-label", "Claim bonus");
 
     document.body.appendChild(button);
 
@@ -19,6 +17,7 @@ describe("twitch-coin", (): void => {
         const callback: () => void = jest.fn();
         const listener: () => void = () => callback();
 
+        button.classList.add("ScCoreButton-sc-1qn4ixc-0", "ScCoreButtonSuccess-sc-1qn4ixc-5", "VGQNd");
         button.addEventListener("click", listener, false);
 
         twitchCoin();
@@ -34,9 +33,8 @@ describe("twitch-coin", (): void => {
         const callback: () => void = jest.fn();
         const listener: () => void = () => callback();
 
-        button.classList.remove("tw-button");
-        button.classList.remove("tw-button--success");
-        button.classList.remove("tw-interactive");
+        button.removeAttribute("aria-label");
+        button.classList.remove("ScCoreButton-sc-1qn4ixc-0", "ScCoreButtonSuccess-sc-1qn4ixc-5", "VGQNd");
         button.addEventListener("click", listener, false);
 
         twitchCoin();

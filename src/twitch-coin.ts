@@ -1,10 +1,10 @@
 export function twitchCoin(): void {
     const AFTER_FIVE_SECOND: number = 5000;
-    const BUTTON_CLASS: string = ".tw-button.tw-button--success";
+    const BUTTON_SELECTOR: string = "[aria-label*='claim bonus' i]";
 
     console.log("[TwitchCoin] I'm searching for a Twitch Coin button to gather Twitch Coin.");
 
-    const button: HTMLButtonElement | null = document.querySelector(BUTTON_CLASS);
+    const button: HTMLButtonElement | null = document.querySelector(BUTTON_SELECTOR);
 
     if (button !== null) {
         console.log("[TwitchCoin] I found a button to gather Twitch coin and I'm going to click it.");
