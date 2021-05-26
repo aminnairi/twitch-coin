@@ -10,3 +10,4 @@
 /.npm
 /.config
 /jest
+/docker-compose.override.yaml
